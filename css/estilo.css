@@ -1,0 +1,374 @@
+/* 1ra Parte Animación CSS: Creación de KeyFrames */
+@keyframes header-baja {
+	0% { top: -100px; }
+	100% { top: 0; }
+}
+
+header {
+	width: 100%;
+    height: 86px;
+    display: block;
+    margin: 0;
+    float: none;
+    position: fixed;
+	
+    top: 0;
+    left: 0;
+    z-index: 99990;
+	
+	/* 2da Parte Animación CSS: Activación de Animación */
+	animation-name: header-baja;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+	animation-timing-function: ease-out;
+}
+
+header a {
+	padding: 15px;
+    width: 217px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+}
+header a img {
+	width: 114%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    bottom: 23px;
+    right: 15px;
+
+}
+header a:hover { }
+header a:hover img { }
+
+
+
+/* 1ra Parte Animación CSS: Creación de KeyFrames */
+@keyframes main-fade {
+	0% { opacity: 0; }
+	100% { opacity: 100%; }
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0;
+	float: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	
+	opacity: 100%;
+
+	background: -moz-radial-gradient(center, ellipse cover,  rgb(0, 0, 0) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover,  rgb(0, 0, 0) 0%,rgba(0,0,0,1) 100%);
+	background: radial-gradient(ellipse at center,  rgb(0, 0, 0) 0%,rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#000000',GradientType=1 );
+	
+	/* 2da Parte Animación CSS: Activación de Animación */
+	animation-name: main-fade;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+	animation-timing-function: ease-out;
+}
+main section#zona-infografia {
+	width: 1100px;
+	height: 600px;
+	display: block;
+	margin: 70px auto 0 auto;
+	float: none;
+	position: relative;
+	
+	overflow: hidden;
+	background: url('../img/FONDO.jpg') no-repeat top center;
+	background-size: cover;
+}
+main section#zona-infografia figure#caja-infografia {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+main section#zona-infografia figure#caja-infografia div.caja-info {
+	display: block;
+	margin: 0 auto;
+	float: none;
+	position: absolute;
+	/* background: rgba(0, 153, 255, 0.9); */
+}
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-01 {
+	width: 350px;
+    height: 250px;
+    top: 125px;
+    left: 260px;
+}
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-02 {
+	width: 280px;
+    height: 210px;
+    top: 275px;
+    right: 152px;
+
+}
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-03 {
+	width: 200px;
+    height: 170px;
+    top: 150px;
+    right: 120px;
+}
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-04 {
+    width: 350px;
+    height: 250px;
+    bottom: -45px;
+    right: -45px;
+
+}
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-05 {
+	width: 350px;
+    height: 249px;
+    bottom: -75px;
+    left: 285px;
+
+}
+
+
+/* 1ra Parte Animación CSS: Creación de KeyFrames */
+@keyframes animacion-puntos {
+	0% { color: #3c3c3c; background: #fff; transform: scale(1); }
+	50% { color: #3c3c3c; background: #d0d0d0; transform: scale(1.1); }
+	100% { color: #3c3c3c; background: #d0d0d0; transform: scale(1); }
+}
+
+main section#zona-infografia figure#caja-infografia div.caja-info a {
+	/* Maquetación */
+	width: 25px;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: none;
+    position: relative;
+	
+	/* Estilo y Acabados */
+	z-index: 50;
+    color: #3c3c3c;
+    background: #d0d0d0;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 0.65em;
+	padding: 5px 0;
+    text-align: center;
+    transition: all 0.3s ease-in;
+	
+	/* 2da Parte Animación CSS: Activación de Animación */
+	animation-name: animacion-puntos;
+	animation-duration: 0.8s;
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+	animation-play-state: running;
+	animation-delay: 3s;
+	animation-timing-function: ease-out;
+}
+main section#zona-infografia figure#caja-infografia div.caja-info a:hover {
+    color: #000000;
+    background: #ffffff;
+    transition: all 0.3s ease-in;
+}
+
+main section#zona-infografia figure#caja-infografia div.caja-info div.info-interna {
+	display: none;
+	margin: 0;
+	float: none;
+	position: absolute;
+	
+	border-radius: 5px;
+	background: #d0d0d0;
+}
+
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-01 div.info-interna {
+	width: 190px;
+    height: 100px;
+    left: -190px;
+    top: -90px;
+}
+
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-02 div.info-interna {
+    width: 265px;
+    height: 145px;
+    left: -252px;
+    top: 15px;
+}
+
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-03 div.info-interna {
+	width: 245px;
+    height: 170px;
+    left: 15px;
+    top: 5px;;
+}
+
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-04 div.info-interna {
+    width: 223px;
+    height: 163px;
+    left: -215px;
+    top: 15px;
+
+}
+
+main section#zona-infografia figure#caja-infografia div.caja-info#caja-05 div.info-interna {
+	width: 320px;
+    height: 140px;
+    left: -271px;
+    top: -137px;
+
+}
+
+main section#zona-infografia figure#caja-infografia div.caja-info div.info-interna h3 {
+	padding: 15px 15px 10px 15px;
+	margin: 0;
+    font-family: 'Manuale', serif;
+    color: #3c3c3c;
+}
+main section#zona-infografia figure#caja-infografia div.caja-info div.info-interna p {
+	padding: 0 15px 15px 15px;
+	margin: 0;
+    font-family: 'Manuale', serif;
+    font-size: 15px;
+    color: #3c3c3c;
+}
+
+main section#zona-infografia figure#caja-infografia a#ver-fotos {
+	width: 120px;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: none;
+    position: absolute;
+	
+    bottom: 15px;
+    right: 25px;
+    z-index: 10;
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    line-height: 1em;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 50px;
+	transition: all 0.3s ease-in;
+}
+main section#zona-infografia figure#caja-infografia a#ver-fotos:hover {
+	background: #000000;
+    color: #fff;
+	
+	transition: all 0.3s ease-in;
+}
+
+
+
+main section#zona-infografia figure#caja-fotos {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	float: none;
+	position: absolute;
+	
+	top: 0;
+	left: 100%;
+	z-index: 100;
+	background: #000000;
+}
+main section#zona-infografia figure#caja-fotos a#ver-infografia {
+	width: 120px;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: none;
+    position: absolute;
+	
+    bottom: 15px;
+    left: 25px;
+    z-index: 10;
+    background:#000000;
+    color: #fff;
+    text-align: center;
+    line-height: 1em;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 50px;
+	transition: all 0.3s ease-in;
+}
+main section#zona-infografia figure#caja-fotos a#ver-infografia:hover {
+	background: #fff;
+    color: #521c1c;
+	
+	transition: all 0.3s ease-in;
+}
+
+main section#zona-infografia figure#caja-fotos div#caja-miniaturas { 
+	width: 780px;
+    height: auto;
+    display: block;
+    margin: 40px auto 0;
+    float: none;
+    position: relative;
+}
+main section#zona-infografia figure#caja-fotos div#caja-miniaturas nav { 
+	width: 100%;
+    height: 530px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#zona-infografia figure#caja-fotos div#caja-miniaturas nav a {
+	width: 250px;
+    height: 208px;
+    display: inline-block;
+    margin: 5px;
+    float: left;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    font-family: 'XBOX360FullVersion';
+    font-size: 10px
+    
+}
+main section#zona-infografia figure#caja-fotos div#caja-miniaturas nav a img {
+	width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    
+}
+main section#zona-infografia figure#caja-fotos div#caja-miniaturas nav a:hover {  }
+main section#zona-infografia figure#caja-fotos div#caja-miniaturas nav a:hover img {  }
+
+
+
+
+footer {  }
+footer nav {  }
